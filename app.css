@@ -45,6 +45,12 @@
   box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
+@media (max-width: 500px){ 
+  .topnav{
+      width: auto;
+      max-width: none;
+  }}
+
 img{
   margin-left:20px;
 }
