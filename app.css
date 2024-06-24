@@ -1,0 +1,258 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+
+.topnav {
+  overflow: hidden;
+  width:100%;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top:0;
+  transition: all 0.3s;
+  z-index:1;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  display: block;
+  padding: 24px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Inter';
+  padding-top:50px;
+}
+
+/* Change the size of links on hover */
+.topnav a:hover {
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  border-bottom: 2px solid black;
+}
+
+.topnav-scrolled{
+  background-color:rgb(22, 125, 90);
+  filter:contrast(0.8);
+  box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+img{
+  margin-left:20px;
+}
+
+.Experience a {
+  font-size: 24px;
+  color: black;
+  font-family: 'Jost';
+  text-align:left;
+  font-weight:bolder;
+}
+
+.Experience b {
+  font-size: 16px;
+  color: black;
+  font-family: 'Jost';
+  text-align:left;
+}
+
+.Experience c {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Jost';
+  font-style:italic;
+  font: weight 600px;
+}
+
+.Education a {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Jost';
+  font-style:italic;
+  font: weight 600px;
+}
+
+.Education uni {
+  font-size: 24px;
+  color: black;
+  font-family: 'Jost';
+  text-align:left;
+  font-weight:bolder;
+}
+
+.Education classes {
+  font-size: 16px;
+  color: black;
+  font-family: 'Jost';
+  text-align:left;
+}
+
+.Contact b {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Jost';
+  font-style:italic;
+  font: weight 600px;
+}
+
+.Projects c {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Jost';
+  font-style:italic;
+  font: weight 600px;
+}
+
+.Projects b {
+  font-size: 16px;
+  color: black;
+  font-family: 'Jost';
+  text-align:left;
+}
+
+.About a {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Jost';
+}
+
+.About b {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Jost';
+  font-style:italic;
+  font: weight 600px;
+}
+
+section{
+  background-color: white;
+  margin:auto;
+  text-align: center;
+  position: relative;
+  animation: mymove 2s 1;
+  border-radius: 10px;
+  opacity: 80%;
+  border:1px black solid;
+}
+
+section:hover{
+  transform:scale(1.1);
+}
+
+@keyframes mymove {
+  from {left: -100px;}
+  to {left: 0px;}
+}
+
+body{
+  background-image:url(assets/BG.png);
+  background-size: cover;
+}
+
+.learn-more a{
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Inter';
+  position: relative;
+  animation: mymove 2s 1;
+}
+
+.learn-more a:hover{
+  border: 1px black solid;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.email-button {
+  display: inline-block;
+  border: solid white 1px;
+  padding: 10px 20px;
+  text-decoration: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color:black;
+}
+
+.email-button:hover {
+  background-color: lightgray; 
+}
+
+.linkedin-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: solid white 1px;
+  text-decoration: none; /* Remove underline from link */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color:black;
+}
+
+.linkedin-button:hover {
+  background-color: lightgray; 
+}
+
+.github-link a{
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Jost';
+  border:1px solid black;
+  border-radius:10px;
+}
+
+.ODI a{
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Jost';
+  border:1px solid black;
+  border-radius:10px;
+}
+
+.uscc-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: solid white 1px;
+  text-decoration: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color:black;
+}
+
+.uscc-button:hover {
+  background-color: lightgray; 
+}
