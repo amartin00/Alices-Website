@@ -56,31 +56,14 @@ img{
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-  .topnav {
-      display: none; /* Hide regular nav links on small screens */
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: 60px; /* Adjust as needed based on your navbar height */
-      left: 0;
-      background-color: #333;
-      z-index: 1;
+  .topnav a {
+    display: none; /* Hide regular nav links on small screens */
+    /* Add styles for mobile navigation */
   }
 
   .hamburger-menu {
     display: block; /* Show hamburger menu icon */
-}
-
-.topnav a.active {
-  border-bottom: 2px solid black;
-}
-
-.topnav a:hover {
-  font-size: 20px;
-  border-bottom: 2px solid black;
-  color: black;
-}
+  }
 }
 
 .Experience a {
