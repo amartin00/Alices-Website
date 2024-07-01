@@ -64,6 +64,17 @@ img{
   .hamburger-menu {
     display: block; /* Show hamburger menu icon */
   }
+
+  .topnav a.show {
+    display: block; /* Show nav links when the hamburger menu is active */
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed based on your navbar height */
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+  }
 }
 
 .Experience a {

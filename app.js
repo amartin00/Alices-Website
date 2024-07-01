@@ -7,3 +7,12 @@ window.addEventListener('scroll', () => {
         topnavS.classList.remove('topnav-scrolled');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const topnavLinks = document.querySelector('.topnav a');
+  
+    hamburgerMenu.addEventListener('click', function() {
+      topnavLinks.classList.toggle('show');
+    });
+  });
