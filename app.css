@@ -45,14 +45,42 @@
   box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
-@media (max-width: 500px){ 
-  .topnav{
-      width: auto;
-      max-width: none;
-  }}
-
 img{
   margin-left:20px;
+}
+
+.hamburger-menu {
+  display: none; /* Hide hamburger menu by default */
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide regular nav links on small screens */
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Adjust as needed based on your navbar height */
+      left: 0;
+      background-color: #333;
+      z-index: 1;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu icon */
+}
+
+.topnav a.active {
+  border-bottom: 2px solid black;
+}
+
+.topnav a:hover {
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  color: black;
+}
 }
 
 .Experience a {
