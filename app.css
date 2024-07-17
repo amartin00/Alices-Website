@@ -3,7 +3,6 @@
   margin:0;
 }
 
-
 .topnav {
   overflow: hidden;
   width:100%;
@@ -14,6 +13,10 @@
   z-index:1;
 }
 
+.topnav #myLinks {
+  display: block;
+  cursor:pointer;
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -49,32 +52,23 @@ img{
   margin-left:20px;
 }
 
-.hamburger-menu {
-  display: none; /* Hide hamburger menu by default */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
   cursor: pointer;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .topnav a {
-    display: none; /* Hide regular nav links on small screens */
-    /* Add styles for mobile navigation */
-  }
+   /* float: right;*/
+    float:none;
+    display: flexbox;
+    text-align: right;
+    padding:0px;
+  } 
 
-  .hamburger-menu {
-    display: block; /* Show hamburger menu icon */
-  }
-
-  .topnav a.show {
-    display: block; /* Show nav links when the hamburger menu is active */
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 60px; /* Adjust as needed based on your navbar height */
-    left: 0;
-    background-color: #333;
-    z-index: 1;
-  }
 }
 
 .Experience a {
