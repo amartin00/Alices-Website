@@ -3,6 +3,14 @@
   margin:0;
 }
 
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+}    
+body {
+   min-height: 100%;
+}
+
 .topnav {
   overflow: hidden;
   width:100%;
@@ -182,7 +190,8 @@ section:hover{
 
 body{
   background-image:url(assets/BG.png);
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .learn-more a{
