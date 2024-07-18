@@ -14,40 +14,44 @@ body {
 .topnav {
   overflow: hidden;
   width:100%;
-  border-bottom: 1px solid black;
-  position: fixed;
+  /*border-bottom: 1px solid black;
+  flex-wrap: wrap;
+  display: inline-flex;
+  */
   top:0;
   transition: all 0.3s;
   z-index:1;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.topnav #myLinks {
-  display: block;
-  cursor:pointer;
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
   color: black;
-  display: block;
-  padding: 24px;
+  display: flex;
   text-decoration: none;
   font-size: 16px;
   font-family: 'Inter';
-  padding-top:50px;
+  padding-top:3%;
+  padding:1%;
+  overflow: hidden;
 }
 
 /* Change the size of links on hover */
 .topnav a:hover {
   font-size: 20px;
-  border-bottom: 2px solid black;
-  color: black;
+  /*border-bottom: 2px solid black;*/
+  color: wheat;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  border-bottom: 2px solid black;
+  color: wheat;
 }
 
 .topnav-scrolled{
@@ -57,26 +61,49 @@ body {
 }
 
 img{
-  margin-left:20px;
+  margin-left:10%;
 }
 
-.topnav a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
 
-@media screen and (max-width: 500px) {
+@media(max-width: 500px) {
   .topnav a {
-   /* float: right;*/
-    float:none;
-    display: flexbox;
     text-align: right;
-    padding:0px;
+    padding:1%;
+    font-size: smaller;
   } 
 
+  .topnav{
+    top:0;
+    transition: all 0.3s;
+    z-index:1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .topnav a:hover {
+    font-size: smaller;
+  }
+
+  .Experience p{
+    font-size: smaller;
+    margin:1.5%;
+  }
+
+  h1{
+    font-size: 5pt;
+  }
+
+  .Education a{
+    font-size: 10px;
+  }
+
+  .Projects b{
+    margin:1.5%;
+  }
+
+  section{
+    font-size: smaller;
+  }
 }
 
 .Experience a {
@@ -94,7 +121,11 @@ img{
   text-align:left;
 }
 
-.Experience c {
+.Experience p{
+  margin:1.5%;
+}
+
+.Experience h1{
   font-size: 48px;
   font-weight: bold;
   color: black;
@@ -127,6 +158,10 @@ img{
   text-align:left;
 }
 
+.Education p{
+  margin:1.5%;
+}
+
 .Contact b {
   font-size: 48px;
   font-weight: bold;
@@ -150,6 +185,7 @@ img{
   color: black;
   font-family: 'Jost';
   text-align:left;
+  margin:1.5%;
 }
 
 .About a {
