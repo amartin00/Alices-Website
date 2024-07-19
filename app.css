@@ -126,7 +126,7 @@ img{
 }
 
 .Experience h1{
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -135,7 +135,7 @@ img{
 }
 
 .Education a {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -163,7 +163,7 @@ img{
 }
 
 .Contact b {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -172,7 +172,7 @@ img{
 }
 
 .Projects c {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -196,7 +196,7 @@ img{
 }
 
 .About b {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
