@@ -14,10 +14,6 @@ body {
 .topnav {
   overflow: hidden;
   width:100%;
-  /*border-bottom: 1px solid black;
-  flex-wrap: wrap;
-  display: inline-flex;
-  */
   top:0;
   transition: all 0.3s;
   z-index:1;
@@ -30,7 +26,6 @@ body {
   justify-content: space-between;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   color: black;
   display: flex;
@@ -42,14 +37,11 @@ body {
   overflow: hidden;
 }
 
-/* Change the size of links on hover */
 .topnav a:hover {
   font-size: 20px;
-  /*border-bottom: 2px solid black;*/
   color: wheat;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   color: wheat;
 }
@@ -63,7 +55,6 @@ body {
 img{
   margin-left:10%;
 }
-
 
 @media(max-width: 500px) {
   .topnav a {
@@ -126,7 +117,7 @@ img{
 }
 
 .Experience h1{
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -135,7 +126,7 @@ img{
 }
 
 .Education a {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -163,7 +154,7 @@ img{
 }
 
 .Contact b {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -172,7 +163,7 @@ img{
 }
 
 .Projects c {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -196,7 +187,7 @@ img{
 }
 
 .About b {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: black;
   font-family: 'Jost';
@@ -276,8 +267,8 @@ body{
   display: inline-block;
   padding: 10px 20px;
   border: solid white 1px;
-  text-decoration: none; /* Remove underline from link */
-  border-radius: 5px; /* Rounded corners */
+  text-decoration: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   color:black;
